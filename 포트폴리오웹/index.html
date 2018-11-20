@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>김다운</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/jquery.mousewheel.js" charset="utf-8"></script>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|PT+Sans+Narrow" rel="stylesheet">
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+      $("body").on("mousewheel", function (event, delta) {
+        if (delta > 0) {
+          $("header").fadeIn();
+        };
+      });
+
+
+      $("body").on("mousewheel", function (event, delta) {
+        if (delta < 0) {
+          $("header").css({ "display": "none" })
+        };
+      });
+
+      $("header").mouseleave(function(){
+        $("header").fadeOut();
+      });
+
+      $("html").on("mousewheel", function (event, delta) {
+        if (delta < 0) {
+          $(".section1 h1,.scroll_out").fadeOut();
+        }
+        else {
+          $(".section1 h1,.scroll_out").fadeIn();
+
+        }
+      });
+
+    
+      $("#header_li_1").click(function(){
+        var offset = $(".section1").offset();
+        $('html, body').animate({scrollTop : offset.top}, 400);
+      });
+
+        $("#header_li_2").click(function(){
+        var offset = $(".section2").offset();
+        $('html, body').animate({scrollTop : offset.top}, 400);
+      });
+
+        $("#header_li_3").click(function(){
+        var offset = $(".section3").offset();
+        $('html, body').animate({scrollTop : offset.top}, 400);
+      });
+
+         $("#header_li_4").click(function(){
+        var offset = $(".section4").offset();
+        $('html, body').animate({scrollTop : offset.top}, 400);
+      });
+    });
+
+  </script>
+
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <div class="header_wrap">
+        <h2>&lt;KimDaWoon&gt;</h2>
+
+        <ul>
+          <li id="header_li_1">MAIN</li>
+          <li id="header_li_2">I'M</li>
+          <li id="header_li_3">SKILL</li>
+          <li id="header_li_4">PORTFOLIO</li>
+
+        </ul>
+
+      </div>
+    </header>
+    <div id="container">
+      <section class="section1">
+        <h1>매일 조금씩 배워가는 퍼블리셔 지망생 김다운입니다.</h1>
+        <div class="scroll_out">
+        <div class="scroll_in"></div>
+        </div>
+      </section>
+
+
+      <section class="section2">
+        <div class="section_wrap section2_wrap">
+          <h2>I'M?</h2>
+
+          <div class="photo_box">
+
+          </div>
+          <div class="im_text">
+
+            <h3>평점 2.5 학생의 동점 홈런</h3>
+
+            <p>
+              지난해 여름 복학을 반년 정도 앞두고 어떠한 분야로 나갈 것인가 고민하던 시기였습니다.</br>
+              우연히 페이스북에서 생활코딩이라는 웹 페이지를 알게 되었습니다. </br>
+              그곳에서 진행하는 코딩 야학이라는 프로그램에 참여하여 끝까지 이수하였습니다.</br>
+              이고잉이라는 강사분의 강의 스타일은 저를 금방 웹이라는 분야로 빠지게 하였고
+              그중 HTML과 CSS는 저에게 </br>큰 매력으로 다가 왔고 조금더 알고 싶다는 욕심에 빠지게 되었습니다.</br>
+              그 욕심은 복학후 성적욕심으로 연계되어서 2.5점을 받던 학생이 4.2점을 받는 장학생으로 변하였습니다.</br>
+              이제 HTML CSS를 넘어 새로운 웹 프론트 영역으로 나가려 하고 있습니다.</br>
+              지고 있던 야구경기에 이제 동점 홈런을 때렸다고 생각 하고 있고 이제는 역전으로 향해 나아갈 것입니다.
+
+            </p>
+
+          </div>
+
+
+        </div>
+      </section>
+
+      <section class="section3">
+          <div class="section3_cover">
+
+        <div class="section_wrap section3_wrap">
+          <h2>SKILL</h2>
+
+          <div class="skills_row">
+            <div class="skill skill1">
+              <img src="img/html.png" alt="">
+              <h4>HTML5</h4>
+              <ul>
+                <li>웹 표준 준수</li>
+                <li>크로스브라우징</li>
+              </ul>
+            </div>
+            <div class="skill skill2">
+              <img src="img/css.png" alt="">
+              <h4>CSS3</h4>
+              <ul>
+                <li>Css animate 효과 활용 가능</li>
+              </ul>
+            </div>
+            <div class="skill skill3">
+              <img src="img/javascript.png" alt="">
+              <h4>Javascript</h4>
+              <ul>
+                <li>JQUERY 활용</li>
+                <li>다양한 플렛폼 활용 준비중</li>
+              </ul>
+
+            </div>
+
+          </div>
+          <div class="skills_row">
+            <div class="skill skill4">
+              <img src="img/photoshop.png" alt="">
+              <h4>PHOTOSHOP</h4>
+              <ul>
+                <li>웹디자인 가능</li>
+                <li>이미지 편집 가능</li>
+              </ul>
+
+            </div>
+            <div class="skill skill5">
+              <img src="img/bootstrap-stack.png" alt="">
+              <h4>BOOTSTRAP</h4>
+              <ul>
+                <li>부트스트랩 템플릿 활용가능</li>
+              </ul>
+
+            </div>
+            <div class="skill skill6">
+              <img src="img/responsive.png" alt="">
+              <h4>MEDIA QUERY</h4>
+              <ul>
+                <li>그리드 방식 코딩 활용</li>
+                <li>다양한 반응형 웹 제작</li>
+              </ul>
+
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section4">
+
+        <div class=" section_wrap section4_wrap">
+          <h2>PORTFOLIO<br><span>Design & publishing</span></h2>
+          <div class="port_row">
+            <div class="port port1">
+              <a href="http://hec8897.dothome.co.kr/">
+              <div class="port_wrap">
+                <h3>바르다 알바생</h3>
+                <p>대림대학교 졸업작품</p>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JQUERY</li>
+                  <li>PHP</li>
+                  <li>MYSQL</li>
+                </ul>
+                <p>Design & publishing & programing</p>
+              </div>
+              </a>
+            </div>
+            <div class="port port2">
+                <a href="http://rlaekdns786.dothome.co.kr/pot1/">
+                  <div class="port_wrap">
+                    <h3>탐라온</h3>
+                    <p>대림대학교 졸업작품</p>
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JQUERY</li>
+                    </ul>
+                    <p>publishing</p>
+                  </div>
+                  </a>
+            </div>
+            <div class="port port3">
+                <a href="http://hec8897.dothome.co.kr/pot/">
+                  <div class="port_wrap">
+                    <h3>Marvle</h3>
+                    <p>스크립트 실무 기말고사 과제 </p>
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JQUERY</li>
+                    </ul>
+                    <p>Design & publishing</p>
+                  </div>
+                  </a>
+            </div>
+          </div>
+          <div class="port_row">
+            <div class="port port4">
+                <a href="http://hec8897.dothome.co.kr/pot2/">
+                  <div class="port_wrap">
+                    <h3>Event Page</h3>
+                    <p>개인 연습</p>
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JQUERY</li>
+                    </ul>
+                    <p>Design & publishing</p>
+                  </div>
+                  </a>
+            </div>
+            <div class="port port5">
+                <a href="http://hec8897.dothome.co.kr/pot3/">
+                  <div class="port_wrap">
+                    <h3>대림대학교 홈페이지</h3>
+                    <p>대림대학교 메인 홈페이지 COPY</p>
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JQUERY</li>
+                    </ul>
+                    <p>publishing</p>
+                  </div>
+                  </a>
+            </div>
+            <div class="port port6">
+                <a href="http://rlaekdns786.dothome.co.kr/pot2/">                
+                  <div class="port_wrap">
+                    <h3>Massage</h3>
+                    <p>실습과제</p>
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>BOOTSTRAP</li>
+                    </ul>
+                    <p>publishing</p>
+                  </div>
+                  </a>
+            </div>
+
+          </div>
+          <div class="port_row">
+            <div class="port port7">
+                <a href="http://rlaekdns786.dothome.co.kr/pot3/">
+                  <div class="port_wrap">
+                    <h3>엠앤엠프렌즈</h3>
+                    <p>실습과제</p>
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>BOOTSTRAP</li>
+                    </ul>
+                    <p>Design & publishing</p>
+                  </div>
+                  </a>
+            </div>
+            <div class="port port8">
+                <a href="http://rlaekdns786.dothome.co.kr/pot4/6.png">
+                  <div class="port_wrap">
+                    <h3>JAPAN TRAVLING</h3>
+                    <p>CWT 웹디자인 클래스</p>
+                    <ul>
+                      <li>DESIGN</li>
+                    </ul>
+                    <p>Design</p>
+                  </div>
+                  </a>
+            </div>
+            <div class="port port9">
+                <a href="#">
+                  <div class="port_wrap">
+                    <h3>포트폴리오</h3>
+                    <p>개인 포트폴리오</p>
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JQUERY</li>
+                    </ul>
+                    <p>Design & publishing</p>
+                  </div>
+                  </a>
+            </div>
+
+
+          </div>
+      </section>
+
+      <section class="section5">
+
+        <h2>CONTACT</h2>
+
+        <div class="section5_wrap">
+
+          <h3>김다운</h3>
+          <p>PHONE</br>
+          <span>010-2386-6487</span></p>
+
+          <p>E-mail</br>
+            <span>hec8897@naver.com</span></p>
+
+            <p>Address</br>
+              <span>서울시 강서구 양천로 18길 27 102동 806호</span></p>
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

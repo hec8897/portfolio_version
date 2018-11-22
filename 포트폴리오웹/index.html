@@ -34,9 +34,25 @@
         }
         else {
           $(".section1 h1,.scroll_out").fadeIn();
+        }   
+    
+    
+
+     
+      });
+
+      $("html").on("mousewheel", function (event, delta) {
+        if (delta < 0) {
+          $(".section2_wrap").delay(200).fadeIn();
 
         }
+        else {
+        }    
+    
+
+     
       });
+
 
     
       $("#header_li_1").click(function(){
@@ -44,9 +60,15 @@
         $('html, body').animate({scrollTop : offset.top}, 400);
       });
 
+   
+
         $("#header_li_2").click(function(){
         var offset = $(".section2").offset();
+
         $('html, body').animate({scrollTop : offset.top}, 400);
+        $(".section2_wrap").delay(800).fadeIn();
+
+
       });
 
         $("#header_li_3").click(function(){
@@ -58,7 +80,51 @@
         var offset = $(".section4").offset();
         $('html, body').animate({scrollTop : offset.top}, 400);
       });
+
+      $("#improfile1").on("click",function(){
+        $(".select_box").animate({
+          left : "0%"
+        },function(){          
+        $(".im_list_li").css({"color":"black"})
+        $("#improfile1").css({"color":"white"})
+        })     
+        $(".profile_box").load("profile1.txt")
+      })
+
+
+      $("#improfile2").on("click",function(){
+        $(".select_box").animate({
+          left : "25%"
+        },function(){          
+        $(".im_list_li").css({"color":"black"})
+        $("#improfile2").css({"color":"white"})
+        })     
+        $(".profile_box").load("profile2.txt")
+      })
+
+      $("#improfile3").on("click",function(){
+        $(".select_box").animate({
+          left : "50%"
+        },function(){          
+        $(".im_list_li").css({"color":"black"})
+        $("#improfile3").css({"color":"white"})
+        }) 
+        $(".profile_box").load("profile3.txt")
+      })
+
+
+      $("#improfile4").on("click",function(){
+          $(".select_box").animate({
+          left : "75%"
+        },function(){          
+        $(".im_list_li").css({"color":"black"})
+        $("#improfile4").css({"color":"white"})
+        }) 
+        $(".profile_box").load("profile4.txt")
+      })
     });
+
+    
 
   </script>
 
@@ -91,6 +157,18 @@
 
       <section class="section2">
         <div class="section_wrap section2_wrap">
+
+          <div class="select_box"></div>
+
+          <ul class="im_list">
+            <li class="im_list_li" id="improfile1">profile1</li>
+            <li class="im_list_li" id="improfile2">I'M?</li>
+            <li class="im_list_li" id="improfile3">profile3</li>
+            <li class="im_list_li" id="improfile4">profile4</li>
+          </ul>
+
+          <div class="profile_box">
+
           <h2>I'M?</h2>
 
           <div class="photo_box">
@@ -111,6 +189,8 @@
               지고 있던 야구경기에 이제 동점 홈런을 때렸다고 생각 하고 있고 이제는 역전으로 향해 나아갈 것입니다.
 
             </p>
+
+          </div>
 
           </div>
 

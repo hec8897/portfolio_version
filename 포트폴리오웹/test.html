@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<style>
+</style>
+</head>
+<body>
+
+    <input type="date" id="test1" value="2018-12-31">
+    <p id="date">오늘 날짜</p>
+
+    <script>
+
+function dateDiff(_date1, _date2) {
+    var diffDate_1 = _date1 instanceof Date ? _date1 : new Date(_date1);
+    var diffDate_2 = _date2 instanceof Date ? _date2 : new Date(_date2);
+ 
+    diffDate_1 = new Date(diffDate_1.getFullYear(), diffDate_1.getMonth()+1, diffDate_1.getDate());
+    diffDate_2 = new Date(diffDate_2.getFullYear(), diffDate_2.getMonth()+1, diffDate_2.getDate());
+ 
+    var diff = Math.abs(diffDate_2.getTime() - diffDate_1.getTime());
+    diff = Math.ceil(diff / (1000 * 3600 * 24));
+ 
+    return diff;
+}
+ 
+var a = '2016-01-01';
+ 
+console.log('a는 오늘로 부터 ' + dateDiff(a, new Date()) + '일 전입니다.');
+
+
+        
+
+    
+    </script>
+
+</body>
+</html>

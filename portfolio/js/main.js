@@ -16,8 +16,7 @@ var eventMethod={
         })
     },
     textList:function(){
-        $(document).ready(function(){
-            
+        $(document).ready(function(){           
        
             $("#improfile1").click(function(){              
                 $(".select_box").animate({
@@ -55,16 +54,48 @@ var eventMethod={
                     $("#improfile4").css({"color":"white"});
                 });              
             })
+        })                                 
+    },
+    menuEvent:function(){
+   
+        $(window).ready(function(){
+            $("header").mouseleave(function(){
+                $(this).fadeOut();
+            })         
+    
+            $(".header_li1").click(function(){
+                var offset = $(".section1").offset();
+                $('html, body').animate({scrollTop : offset.top}, 400);
+              });   
+              $(".header_li2").click(function(){
+                var offset = $(".section2").offset();
+                $('html, body').animate({scrollTop : offset.top}, 400);
+                $(".section2_wrap").delay(800).fadeIn();
+              });
+              $(".header_li3").click(function(){
+                var offset = $(".section3").offset();
+                $('html, body').animate({scrollTop : offset.top}, 400);
+                $(".section2").delay(800).fadeIn();
+              });
+              $(".header_li4").click(function(){
+                var offset = $(".section4").offset();
+                $('html, body').animate({scrollTop : offset.top}, 400);
+                $(".section2").delay(800).fadeIn();
+              });          
+
         })
-  
-      
-      
-          
-      
-         
+        $(window).scroll(function(){
+            $("header").fadeIn(1000);
+            setTimeout(function(){
+                $("header").fadeOut(1000);
+            },5000)
+        })
+        
+
     }
 }
 
 
 eventMethod.headerBar();
 eventMethod.textList();
+eventMethod.menuEvent();

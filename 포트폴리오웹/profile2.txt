@@ -1,11 +1,8 @@
-  <h2>I'M?</h2>
 
-          <div class="photo_box">
+       
+          <div class="im_text im_text2">
 
-          </div>
-          <div class="im_text">
-
-            <h3>2222평점 2.5 학생의 동점 홈런</h3>
+            <h3>평점 2.5 학생의 동점 홈런</h3>
 
             <p>
               지난해 여름 복학을 반년 정도 앞두고 어떠한 분야로 나갈 것인가 고민하던 시기였습니다.</br>

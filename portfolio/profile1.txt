@@ -1,0 +1,17 @@
+     <div class="photo_box">
+
+                </div>
+                <div class="im_text im_text1">
+                <h2>KIM DA WOON</h2>
+                  <h4>멈춰있지 않는 퍼블리셔</h4>
+                  <ul>
+                    <li>프로필</li>
+                    <li><p>NAME</p><p>김다운</p></li>
+                    <li><p>BirthDay</p><p>19930408</p></li>
+                    <li><p>ADDRESS</p><p>서울시 강서구 양천로 18길 27 102동 806호</p></li>
+                    <li><p>Phone</p><p>01023866487</p></li>
+                    <li><p>KaKao</p><p>hec8897</p></li>
+                    <li><p>E-mail</p><p>hec8897@naver.com</p></li>
+    
+                  </ul>  
+                </div>       

@@ -44,6 +44,7 @@ var eventMethod={
                 },function(){
                     $(".im_list_li").css({"color":"black"});
                     $("#improfile3").css({"color":"white"});
+                    alert("준비중입니다")
                 });              
             })
             $("#improfile4").click(function(){
@@ -52,6 +53,7 @@ var eventMethod={
                 },function(){
                     $(".im_list_li").css({"color":"black"});
                     $("#improfile4").css({"color":"white"});
+                    alert("준비중입니다")
                 });              
             })
         })                                 

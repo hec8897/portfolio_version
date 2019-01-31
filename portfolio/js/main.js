@@ -1,14 +1,17 @@
 var eventMethod={
     headerBar:function(){
         $(window).scroll(function(){
+            
 
         var bodyHeight = document.body.clientHeight;//body height
         var scrollRate = (scrollY + innerHeight) / bodyHeight * 100; //height rate
 
+        console.log(scrollRate);
+
         $(".bar_cover").animate({
             width: scrollRate + "%"
         },0)
-        if(scrollRate <= 35){
+        if(scrollY <= 100){
             $(".bar_cover").css({
                 "width": "0px"
             },0)
@@ -88,12 +91,12 @@ var eventMethod={
               });          
 
         })
-        $(window).scroll(function(){
-            $("header").fadeIn(1000);
-            setTimeout(function(){
-                $("header").fadeOut(1000);
-            },5000)
-        })
+        // $(window).scroll(function(){
+        //     $("header").fadeIn(1000);
+        //     setTimeout(function(){
+        //         $("header").fadeOut(1000);
+        //     },5000)
+        // })
         
 
     }

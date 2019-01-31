@@ -576,12 +576,12 @@ section{
     }
 
     .section2{
-      height: 500px;
+      height: 700px;
       animation:  ani0 40s linear infinite normal;
     }
   
     .section3{
-      height: 600px;
+      height: 800px;
     }
   .im_text{
     width: 60%;

@@ -669,21 +669,21 @@ section{
 }
 
 .section1{
-height: 600px;
+height: 100vh;
 animation:  ani0 40s linear infinite normal;
 background-size: cover;
 }
 
 
 .section1 h1{
-    top: 30%;
+    top: 40%;
     color: BLACK;
     font-size: 1.2rem;
 }
 
 .scroll_out{
   left: 50%;
-  top: 45%;
+  top: 50%;
   transform: translate(-50%,-50%);
 }
 
@@ -734,7 +734,10 @@ margin-top: 50px;
   
 }
 
-
+  
+.im_text2{
+  width: 90%;
+}
 
 
 .section3{
@@ -792,7 +795,7 @@ margin-top: 20px;
 
 .port{
 width: 70%;
-height: 220px;
+height: 250px;
 display: inline-block;;
 margin:0px;
 margin-bottom: 50px;
@@ -822,52 +825,7 @@ margin-left: 5px;
 display: inline;
 font-size: 0.8rem;
 }
-.port{
-background-repeat: no-repeat;
-background-size: 95%;
-background-position: center;
-background-repeat:no-repeat;
-}
 
-.port1{
-background-image: url(../img/port1.png);
-}
-
-.port2{
-background-image: url(../img/port10.png);
-}
-
-.port3{
-background-image: url(../img/port3.png);
-margin:0px;
-}
-
-.port4{
-background-image: url(../img/port4.png);
-}
-
-.port5{
-background-image: url(../img/port5.png);
-}
-
-.port6{
-background-image: url(../img/port6.png);
-margin:0px;
-}
-
-
-.port7{
-background-image: url(../img/port7.png);
-}
-
-.port8{
-background-image: url(../img/port8.png);
-}
-
-.port9{
-background-image: url(../img/port9.png);
-margin: 0px;
-}
 
 
 }

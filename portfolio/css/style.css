@@ -701,7 +701,8 @@ background-size: cover;
 
 
 .section2{
-  height: 800px;;
+  height: 100%;
+  min-height: 800px;;
 }
 
 

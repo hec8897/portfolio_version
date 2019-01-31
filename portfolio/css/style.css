@@ -8,14 +8,12 @@ a{
 }
 html,body{
   font-family: 'Nanum Gothic', sans-serif;
-  min-width: 1250px;
   font-size: 16px;
 }
 
 
 header{
     width: 100%;
-  min-width: 1250px;
 
     height: 65px;
     background-color: white;
@@ -62,7 +60,6 @@ header{
 section{
     width: 100%;
     height: 100vh;
-  min-width: 1250px;
 
 }
 .section_wrap{
@@ -430,4 +427,447 @@ section{
 .port9{
   background-image: url(../img/port9.png);
   margin: 0px;
+}
+
+@media (max-width:1200px) and (min-width:1024px){
+  html,body{
+    font-size: 14px;
+  }
+
+
+.header_wrap h2{
+  padding-left: 20px;
+
+}
+
+
+
+  .select_box{
+    border: 2px solid white;
+    box-sizing: border-box
+  }
+  
+  
+  .im_list{
+    margin: 20px auto;
+    border-bottom: 3px solid lightgray;
+  }
+
+  .photo_box{
+    width: 220px;
+    height: 320px;
+  }
+
+.im_text{
+  width: 60%;
+  height: 50%;
+}
+
+
+
+  .skills_row{
+    text-align: center;
+    margin-top: 3%;
+  }
+  
+  .skill{
+    width: 18%;
+    height: 250px;
+  }
+  .skills_row h4{
+    font-size: 1.2rem;
+  }
+  
+  .skills_row ul li{
+    font-size: 1.0rem;
+  }
+  
+
+.section4{
+  height: 1200px;
+}
+
+
+.port{
+  width: 25%;;
+  height: 300px;
+}
+
+.port h3{
+  color: white;
+  font-size: 1.3rem;
+  padding-top: 50px;
+}
+.port p{
+  color: white;
+  padding-top: 10px;
+  font-size: 1.0rem;
+
+  font-weight: bold;
+}
+.port ul{
+  margin-top: 20px;
+}
+.port ul li{
+  color: white;
+  margin-right: 5px;
+  margin-left: 5px;
+  display: inline;
+  font-size: 0.8rem;
+}
+.port{
+  background-repeat: no-repeat;
+  background-size: 95%;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+
+
+}
+
+
+
+
+@media (max-width:991px) and (min-width:778px) {
+  html,body{
+    font-size: 14px;
+  }
+
+  .header_wrap h2{
+    padding-left: 20px;
+  
+  }
+  
+  .header_wrap ul{
+      padding-right: 50px;
+  }
+  .header_wrap ul li{
+      margin:0px 00px 0px 40px;
+  }
+
+  
+ 
+ 
+  .section1{
+    animation:  ani0 40s linear infinite normal;
+  }
+  
+
+    .section1 h1{
+        position: relative;
+        top: 50%;
+        text-align: center;
+        color: white;
+        font-size: 1.3rem;
+    }
+  
+  
+    .select_box{
+      border: 3px solid white;
+      box-sizing: border-box;
+    }
+    
+   
+  
+    .photo_box{
+      width: 200px;
+      height: 300px;
+    }
+  
+  .im_text{
+    width: 60%;
+    height: 40%;
+    float: left;
+    margin-top: 50px;
+  }
+
+  
+    .section3_wrap h2{
+      padding-top: 20px;
+    }
+    .skills_row{
+      text-align: center;
+      margin-top: 1%;
+    }
+    
+    .skill{
+      width: 15%;
+      height: 240px;
+    }
+
+ 
+    
+  
+    
+  .section4{
+    height: 1000px;
+  }
+
+
+  
+  .port_row{
+    margin-top: 10px;
+  }
+  
+  .port{
+    width: 26%;
+    height: 280px;
+    display: inline-block;;
+    margin-right: 50px;
+    overflow: hidden;
+  }
+  .port:hover .port_wrap{
+    display: block;
+  }
+  .port_wrap{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    border: 4px solid gray;
+    box-sizing: border-box;
+    display: none;
+  }
+  
+  .port h3{
+    color: white;
+    font-size: 1.3rem;
+    padding-top: 50px;
+  }
+  .port p{
+    color: white;
+    padding-top: 10px;
+    font-size: 1.0rem;
+  
+    font-weight: bold;
+  }
+  .port ul{
+    margin-top: 20px;
+  }
+
+
+}
+@media (max-width:777px) {
+  html,body{
+    font-size: 12px;
+  }
+
+
+.header_wrap h2{
+  padding-left: 20px;
+
+}
+
+.header_wrap ul{
+  padding-right: 10px;
+}
+.header_wrap ul li{
+  margin:0px 15px 0px 0px;
+}
+section{
+  width: 100%;
+
+}
+
+.section1{
+height: 600px;
+animation:  ani0 40s linear infinite normal;
+background-size: cover;
+}
+
+
+.section1 h1{
+    top: 30%;
+    color: BLACK;
+    font-size: 1.2rem;
+}
+
+.scroll_out{
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%,-50%);
+}
+
+
+.section2{
+  height: 800px;;
+}
+
+
+.im_list li{
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  line-height: 40px;
+  font-size: 1.1rem;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+}
+
+.im_list li:nth-child(1){
+  color: white;
+}
+
+
+.photo_box{
+  width: 25%;
+  height: 160px;;
+  background-size: cover;
+}
+
+.im_text{
+width: 60%;
+height: 50%;
+float: left;
+margin-top: 50px;
+}
+
+
+.im_text1{
+  padding-left:25px;
+}
+
+
+
+.im_text1 ul li p{
+  width: 40%;
+  
+}
+
+
+
+
+.section3{
+  height: 600px!important;
+  background-size: cover;
+  background-attachment:inherit;
+  background-position: right;
+}
+
+.section3_wrap h2{
+  font-size: 1.8rem;
+  padding-top: 30px;
+}
+.skills_row{
+  text-align: center;
+  margin-top: 5%;
+}
+
+.skill{
+  width:24%;
+  height: 230px;
+  margin: 10px!important;
+}
+.skills_row h4{
+  font-size: 1.0rem;
+  padding-top: 20px;
+  color: white;
+}
+
+.skills_row ul li{
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: white;
+}
+
+.skill img{
+  width: 50%!important;
+  min-width: 60px;
+
+}
+
+
+
+.section4{
+height: 100%;
+}
+.section4_wrap{
+text-align: center;;
+}
+
+
+.port_row{
+margin-top: 20px;
+}
+
+.port{
+width: 70%;
+height: 220px;
+display: inline-block;;
+margin:0px;
+margin-bottom: 50px;
+}
+
+
+
+.port h3{
+color: white;
+font-size: 1.3rem;
+padding-top: 50px;
+}
+.port p{
+color: white;
+padding-top: 10px;
+font-size: 1.0rem;
+
+font-weight: bold;
+}
+.port ul{
+margin-top: 20px;
+}
+.port ul li{
+color: white;
+margin-right: 5px;
+margin-left: 5px;
+display: inline;
+font-size: 0.8rem;
+}
+.port{
+background-repeat: no-repeat;
+background-size: 95%;
+background-position: center;
+background-repeat:no-repeat;
+}
+
+.port1{
+background-image: url(../img/port1.png);
+}
+
+.port2{
+background-image: url(../img/port10.png);
+}
+
+.port3{
+background-image: url(../img/port3.png);
+margin:0px;
+}
+
+.port4{
+background-image: url(../img/port4.png);
+}
+
+.port5{
+background-image: url(../img/port5.png);
+}
+
+.port6{
+background-image: url(../img/port6.png);
+margin:0px;
+}
+
+
+.port7{
+background-image: url(../img/port7.png);
+}
+
+.port8{
+background-image: url(../img/port8.png);
+}
+
+.port9{
+background-image: url(../img/port9.png);
+margin: 0px;
+}
+
+
 }

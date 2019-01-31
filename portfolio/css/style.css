@@ -97,7 +97,7 @@ section{
 
   .section1 h1{
       position: relative;
-      top: 50%;
+      top: 40%;
       text-align: center;
       color: white;
       font-size: 1.3rem;
@@ -111,7 +111,7 @@ section{
     position: relative;
     left: 50%;
     top: 55%;
-    transform: translateY(-50%),translateX(-50%);
+    transform: translate(-50%,-50%);
   }
   
   .scroll_in{
@@ -556,10 +556,13 @@ section{
 
     .section1 h1{
         position: relative;
-        top: 50%;
+        top: 40%;
         text-align: center;
         color: white;
         font-size: 1.3rem;
+    }
+    .scroll_out{
+      top: 65%;
     }
   
   
@@ -576,12 +579,12 @@ section{
     }
 
     .section2{
-      height: 700px;
+      height: 550px;
       animation:  ani0 40s linear infinite normal;
     }
   
     .section3{
-      height: 800px;
+      height: 750px;
     }
   .im_text{
     width: 60%;
@@ -601,7 +604,7 @@ section{
     
     .skill{
       width: 15%;
-      height: 240px;
+      height: 300px;
     }
 
  

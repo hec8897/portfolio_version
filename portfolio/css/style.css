@@ -549,6 +549,7 @@ section{
  
  
   .section1{
+    height: 100vh;
     animation:  ani0 40s linear infinite normal;
   }
   
@@ -573,7 +574,15 @@ section{
       width: 200px;
       height: 300px;
     }
+
+    .section2{
+      height: 500px;
+      animation:  ani0 40s linear infinite normal;
+    }
   
+    .section3{
+      height: 600px;
+    }
   .im_text{
     width: 60%;
     height: 40%;

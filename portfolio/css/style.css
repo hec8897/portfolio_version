@@ -176,7 +176,7 @@ section{
     float: left;
     margin-top: 50px;
     margin-left: 20px;
-    background-image: url(../img/pro.jpg);
+    background-color:skyblue;
     background-position: center;;
     border: 1px solid black;
   }
